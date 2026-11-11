@@ -1,48 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { useEffect, useRef, useState } from "react";
-import MenuIcon from "./icons/MenuIcon";
 import demoInfo from "../demoInfo";
 import ReactMarkdown from "react-markdown";
-
-const Base = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-const Trigger = styled.div`
-  position: fixed;
-  top: 0;
-  height: 90px;
-  width: 150px;
-
-  &:hover + button {
-    transform: translateY(70px);
-  }
-`;
-
-const MenuButton = styled.button<{ $show: boolean }>`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: -60px;
-  padding: 0;
-  width: 60px;
-  height: 60px;
-  background: ${({ theme }) => theme.palette.menu};
-  color: ${({ theme }) => theme.palette.secondary};
-  border: none;
-  border-radius: 100%;
-  cursor: pointer;
-
-  ${({ $show }) => ($show ? "transform: translateY(70px)" : "")};
-  transition: transform 270ms;
-
-  &:hover {
-    transform: translateY(70px);
-  }
-`;
 
 const Overlay = styled.div`
   position: fixed;
@@ -135,12 +95,16 @@ const ProfileLink = styled.a`
   }
 `;
 
-const DemoList = () => {
+type MenuProps = {
+  isOpen: boolean;
+  handleSetIsOpen: (state: boolean) => void;
+};
+
+const Menu = ({ isOpen, handleSetIsOpen }: MenuProps) => {
   const location = useLocation();
   const windowRef = useRef<HTMLDivElement | null>(null);
   const menuButtonRef = useRef<HTMLButtonElement | null>(null);
 
-  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [height, setHeight] = useState("0px");
 
   const getInfoForRoute = (route: string): string => {
@@ -160,7 +124,7 @@ const DemoList = () => {
 
   const closeWindow = () => {
     setHeight("0px");
-    setTimeout(() => setIsOpen(false), 300);
+    setTimeout(() => handleSetIsOpen(false), 300);
   };
 
   const handleOnClick = (event: MouseEvent) => {
@@ -195,11 +159,7 @@ const DemoList = () => {
   }, [isOpen]);
 
   return (
-    <Base>
-      <Trigger />
-      <MenuButton ref={menuButtonRef} onClick={() => setIsOpen(!isOpen)} $show={isOpen}>
-        <MenuIcon />
-      </MenuButton>
+    <>
       {isOpen && (
         <Overlay>
           <MenuWindow ref={windowRef} $height={height}>
@@ -236,8 +196,8 @@ const DemoList = () => {
           </MenuWindow>
         </Overlay>
       )}
-    </Base>
+    </>
   );
 };
 
-export default DemoList;
+export default Menu;

@@ -1,11 +1,11 @@
 // @ts-ignore: imported raw markdown without type declarations
-import homeReadme from "./components/demos/home/README.md?raw";
+import homeReadme from "./components/pages/home/README.md?raw";
 // @ts-ignore: imported raw markdown without type declarations
-import wordVortexReadme from "./components/demos/word-vortex/README.md?raw";
+import wordVortexReadme from "./components/pages/word-vortex/README.md?raw";
 // @ts-ignore: imported raw markdown without type declarations
-import photoDumpReadme from "./components/demos/photo-dump/README.md?raw";
+import photoDumpReadme from "./components/pages/photo-dump/README.md?raw";
 // @ts-ignore: imported raw markdown without type declarations
-import dragNThrowReadme from "./components/demos/drag-n-throw/README.md?raw";
+import dragNThrowReadme from "./components/pages/drag-n-throw/README.md?raw";
 
 const demoInfo: Record<string, string> = {
   home: homeReadme,

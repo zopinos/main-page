@@ -1,2 +1,3 @@
-# Demo Dump
-I put visual stuff here.
+# zopinos main page
+
+Currently a portfolio page.

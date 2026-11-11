@@ -8,9 +8,10 @@ export const H1 = styled.h1<{ $whiteFont?: boolean; $oldFont?: boolean }>`
   color: ${({ theme, $whiteFont }) => ($whiteFont ? theme.palette.secondary : theme.palette.primary)};
 `;
 
-export const P = styled.p<{ $whiteFont?: boolean; $oldFont?: boolean }>`
+export const P = styled.p<{ $whiteFont?: boolean; $oldFont?: boolean; $bolded?: boolean }>`
   font-family: ${({ theme, $oldFont }) => ($oldFont ? theme.typography.fonts.old : theme.typography.fonts.main)};
-  font-weight: ${({ theme }) => theme.typography.fontWeights.normal};
+  font-weight: ${({ theme, $bolded }) =>
+    $bolded ? theme.typography.fontWeights.bold : theme.typography.fontWeights.normal};
   font-size: ${({ theme }) => theme.typography.fontSizes.body};
   font-style: normal;
   color: ${({ theme, $whiteFont }) => ($whiteFont ? theme.palette.secondary : theme.palette.primary)};

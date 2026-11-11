@@ -21,31 +21,12 @@ const Page = styled.div`
   max-width: 30em;
 `;
 
-const TutorialImg = styled.img`
-  position: fixed;
-  top: 90px;
-  left: 49%;
-  height: 150px;
-`;
-
-const ButtonHint = styled.div`
-  position: fixed;
-  top: 7px;
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-  border-style: dashed;
-  border-color: #ffffff;
-`;
-
 const Home = () => {
   return (
     <Base>
-      <ButtonHint />
-      <TutorialImg draggable="false" src="/demo-dump/20250201_233506_2.png" />
       <Page>
-        <H1 $whiteFont>demo-dump</H1>
-        <P $whiteFont>My visual sandbox and archive.</P>
+        <H1 $whiteFont>zopinos.dev</H1>
+        <P $whiteFont>Main page.</P>
       </Page>
     </Base>
   );
