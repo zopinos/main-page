@@ -75,11 +75,11 @@ const Portfolio = () => {
             <ProjectButton link="https://github.com/zopinos/demo-dump">Github</ProjectButton>
           </LinkButtons>
           <P $whiteFont>
-            Personal visual sandbox and archive. Currently,{" "}
-            <HyperLink href="https://zopinos.github.io/main-page/#/photo-dump" rel="noopener" target="_blank">
-              here
+            Personal visual sandbox and archive.
+            <HyperLink href="https://zopinos.github.io/demo-dump/#/photo-dump" rel="noopener" target="_blank">
+              Here
             </HyperLink>{" "}
-            I also have my photography portfolio set up.
+            I also have my photography portfolio currently set up.
           </P>
         </ProjectBox>
         <ProjectBox>
