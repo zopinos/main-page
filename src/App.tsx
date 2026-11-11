@@ -2,11 +2,10 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/home/Home";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import theme from "./theme";
-import WordVortex from "./components/pages/word-vortex/WordVortex";
+import Portfolio from "./components/pages/portfolio/Portfolio";
 import TopBar from "./components/TopBar";
 import PhotoDump from "./components/pages/photo-dump/PhotoDump";
 import DragNThrow from "./components/pages/drag-n-throw/DragNThrow";
-import Menu from "./components/Menu";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -32,16 +31,8 @@ const App = () => {
         <TopBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/word-vortex/" element={<WordVortex />} />
-          <Route path="/photo-dump/" element={<PhotoDump />} />
-          <Route path="/drag-n-throw/" element={<DragNThrow />} />
+          <Route path="/portfolio/" element={<Portfolio />} />
         </Routes>
-        <Menu
-          isOpen={false}
-          handleSetIsOpen={(state: boolean) => {
-            return;
-          }}
-        />
       </ThemeProvider>
     </Router>
   );
