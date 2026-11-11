@@ -15,8 +15,10 @@ const theme: DefaultTheme = {
   },
   typography: {
     fontSizes: {
+      smaller: "16px",
       body: "18px",
-      heading: "42px"
+      heading: "42px",
+      heading2: "32px"
     },
     fonts: {
       main: "Courier New, monospace",

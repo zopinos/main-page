@@ -1,42 +1,112 @@
-import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
-import theme from "../../../theme";
-import { H1, P } from "../../StyledElements";
+import styled from "styled-components";
+import { BoxButton, H1, H2, P } from "../../StyledElements";
 
-const GlobalStyle = createGlobalStyle`
-  html,
-  body {
-    background-color: #fff2c5;
-  }
-`;
-
-const Page = styled.div`
+const Base = styled.div`
   display: flex;
-  align-items: center;
+  flex: 1;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  background-color: ${({ theme }) => theme.palette.primary};
 `;
 
 const Content = styled.div`
   display: flex;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
   margin-top: 80px;
   overflow-y: scroll;
 `;
 
+const Heading = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+`;
+
+const LinkButtons = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+`;
+
+const ProjectBox = styled.div`
+  margin-bottom: 20px;
+`;
+
+const HyperLink = styled.a`
+  color: #70a9ff;
+
+  &:hover {
+    color: #4678c4;
+  }
+`;
+
+interface ProjectButtonProps extends React.PropsWithChildren {
+  link: string;
+}
+
+const ProjectButton = ({ link, children }: ProjectButtonProps) => {
+  return <BoxButton onClick={() => window.open(link, "_blank", "noopener")}>{children}</BoxButton>;
+};
+
 const Portfolio = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Page>
-        <Content>
-          <H1 $oldFont>Portfolio</H1>
-          <P $oldFont>Projects from newest to oldest.</P>
-        </Content>
-      </Page>
-    </ThemeProvider>
+    <Base>
+      <Content>
+        <Heading>
+          <H1 $whiteFont>Portfolio</H1>
+          <P $whiteFont>Projects from newest to oldest.</P>
+        </Heading>
+
+        <ProjectBox>
+          <H2 $whiteFont>Glare Game</H2>
+          <LinkButtons>
+            <ProjectButton link="https://zopinos.github.io/glare-game/">To Game</ProjectButton>
+            <ProjectButton link="https://github.com/zopinos/glare-game">Github</ProjectButton>
+          </LinkButtons>
+          <P $whiteFont>Game project. Project 2 for the course Device-Agnostic Design with Flutter and Dart.</P>
+        </ProjectBox>
+        <ProjectBox>
+          <H2 $whiteFont>demo-dump</H2>
+          <LinkButtons>
+            <ProjectButton link="https://zopinos.github.io/demo-dump/">To Page</ProjectButton>
+            <ProjectButton link="https://github.com/zopinos/demo-dump">Github</ProjectButton>
+          </LinkButtons>
+          <P $whiteFont>
+            Personal visual sandbox and archive. Currently,{" "}
+            <HyperLink href="https://zopinos.github.io/main-page/#/photo-dump" rel="noopener" target="_blank">
+              here
+            </HyperLink>{" "}
+            I also have my photography portfolio set up.
+          </P>
+        </ProjectBox>
+        <ProjectBox>
+          <H2 $whiteFont>Futuboard</H2>
+          <LinkButtons>
+            <ProjectButton link="https://futuboard.live/">To Page</ProjectButton>
+            <ProjectButton link="https://github.com/Futuboard/Futuboard">Github</ProjectButton>
+          </LinkButtons>
+          <P $whiteFont>Personal visual sandbox and archive.</P>
+        </ProjectBox>
+        <ProjectBox>
+          <H2 $whiteFont>recipe-form</H2>
+          <LinkButtons>
+            <ProjectButton link="https://zopinos.github.io/recipe-form/">To Page</ProjectButton>
+            <ProjectButton link="https://github.com/zopinos/recipe-form">Github</ProjectButton>
+          </LinkButtons>
+          <P $whiteFont>
+            Recipe creation app designed to be used as the recipe item is being made. I made this to learn front-end web
+            dev and React Native.
+          </P>
+        </ProjectBox>
+        <ProjectBox>
+          <H2 $whiteFont>Maze Project</H2>
+          <P $whiteFont>Project for the Ohjelmointistudio 2 -course.</P>
+        </ProjectBox>
+      </Content>
+    </Base>
   );
 };
 

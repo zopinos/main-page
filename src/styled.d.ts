@@ -18,8 +18,10 @@ declare module "styled-components" {
 
     typography: {
       fontSizes: {
+        smaller: string;
         body: string;
         heading: string;
+        heading2: string;
       };
       fonts: {
         main: string;

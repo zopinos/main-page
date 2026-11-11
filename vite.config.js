@@ -5,6 +5,6 @@ const isProduction = process.env.NODE_ENV === "production";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/demo-dump/",
+  base: "/main-page/",
   plugins: [react()]
 });

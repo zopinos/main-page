@@ -4,8 +4,6 @@ import { ThemeProvider, createGlobalStyle } from "styled-components";
 import theme from "./theme";
 import Portfolio from "./components/pages/portfolio/Portfolio";
 import TopBar from "./components/TopBar";
-import PhotoDump from "./components/pages/photo-dump/PhotoDump";
-import DragNThrow from "./components/pages/drag-n-throw/DragNThrow";
 
 const GlobalStyle = createGlobalStyle`
   body {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import MenuIcon from "./icons/MenuIcon";
-import { CircleButton, P } from "./StyledElements";
+import { CircleButton, H1, P } from "./StyledElements";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 
@@ -191,7 +191,7 @@ const TopBar = () => {
                       <b>zopinos</b>
                     </div>
                     <div style={{ padding: "5px" }}>
-                      <ProfileLink href="https://github.com/zopinos/demo-dump" target="_blank">
+                      <ProfileLink href="https://github.com/zopinos" target="_blank">
                         github
                       </ProfileLink>
                     </div>
@@ -206,7 +206,10 @@ const TopBar = () => {
               </MenuContainer>
             </MenuDiv>
             <MenuContainer $flex={"2"}>
-              <InfoBox>Info</InfoBox>
+              <InfoBox>
+                <H1 $whiteFont>zopinos.dev</H1>
+                <P $whiteFont>Welcome to zopinos.dev!</P>
+              </InfoBox>
             </MenuContainer>
           </MenuWindow>
         </Overlay>
