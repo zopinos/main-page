@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <Base>
       <Page>
-        <Logo src="/main-page/src/assets/logo-2.png" />
+        <Logo src="/main-page/apps.png" />
         <H1 $whiteFont>zopinos.dev</H1>
         <P $whiteFont>Main page.</P>
       </Page>

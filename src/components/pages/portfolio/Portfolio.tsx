@@ -87,7 +87,7 @@ const Portfolio = () => {
           </ProjectHeading>
 
           <ProjectImageBox>
-            <ProjectImage src="/main-page/src/assets/glare-game-demo-2.gif" />
+            <ProjectImage src="/main-page/media/glare-game-demo-2.gif" />
           </ProjectImageBox>
           <P $whiteFont $italic>
             Flutter, Flame Engine, Forge2D
@@ -108,7 +108,7 @@ const Portfolio = () => {
             </LinkButtons>
           </ProjectHeading>
           <ProjectImageBox>
-            <ProjectImage src="/main-page/src/assets/demo-dump-demo.png" />
+            <ProjectImage src="/main-page/media/demo-dump-demo.png" />
           </ProjectImageBox>
           <P $whiteFont $italic>
             React, TypeScript, styled-components
@@ -127,7 +127,7 @@ const Portfolio = () => {
             <H2 $whiteFont>Peggle Physics Replicated in Godot</H2>
           </ProjectHeading>
           <ProjectImageBox>
-            <ProjectImage src="/main-page/src/assets/peggle-clone-demo.gif" />
+            <ProjectImage src="/main-page/media/peggle-clone-demo.gif" />
           </ProjectImageBox>
           <P $whiteFont $italic>
             Godot, gdscript
@@ -152,7 +152,7 @@ const Portfolio = () => {
             </LinkButtons>
           </ProjectHeading>
           <ProjectImageBox>
-            <ProjectImage src="/main-page/src/assets/futuboard-demo.png" />
+            <ProjectImage src="/main-page/media/futuboard-demo.png" />
           </ProjectImageBox>
           <P $whiteFont $italic>
             React, TypeScript, Django, Python
@@ -189,7 +189,7 @@ const Portfolio = () => {
             <H2 $whiteFont>Art Gallery Project</H2>
           </ProjectHeading>
           <ProjectImageBox>
-            <ProjectImage src="/main-page/src/assets/art-gallery-demo.gif" />
+            <ProjectImage src="/main-page/media/art-gallery-demo.gif" />
           </ProjectImageBox>
           <P $whiteFont $italic>
             Godot, gdscript, Blender
@@ -202,7 +202,7 @@ const Portfolio = () => {
             <H2 $whiteFont>Maze Project</H2>
           </ProjectHeading>
           <ProjectImageBox>
-            <ProjectImage src="/main-page/src/assets/maze-project-demo.gif" />
+            <ProjectImage src="/main-page/media/maze-project-demo.gif" />
           </ProjectImageBox>
           <P $whiteFont $italic>
             Scala, ScalaFX
@@ -222,7 +222,7 @@ const Portfolio = () => {
             <H2 $whiteFont>Godot Voxel Experiment</H2>
           </ProjectHeading>
           <ProjectImageBox>
-            <ProjectImage src="/main-page/src/assets/voxel-demo.gif" />
+            <ProjectImage src="/main-page/media/voxel-demo.gif" />
           </ProjectImageBox>
           <P $whiteFont $italic>
             Godot, gdscript
