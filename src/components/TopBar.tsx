@@ -18,6 +18,9 @@ const TopBarBase = styled.div`
   padding: 8px;
   padding-left: 14px;
   gap: 20px;
+  border-style: solid;
+  border-color: ${({ theme }) => theme.palette.light};
+  border-width: 1px;
 `;
 
 const Header = styled.div`

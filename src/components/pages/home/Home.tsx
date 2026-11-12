@@ -21,10 +21,21 @@ const Page = styled.div`
   max-width: 30em;
 `;
 
+const Logo = styled.img`
+  width: 100px;
+  margin-bottom: 10px;
+
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+`;
+
 const Home = () => {
   return (
     <Base>
       <Page>
+        <Logo src="/main-page/src/assets/logo-2.png" />
         <H1 $whiteFont>zopinos.dev</H1>
         <P $whiteFont>Main page.</P>
       </Page>
