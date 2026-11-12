@@ -28,7 +28,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   font-size: ${({theme:e})=>e.typography.fontSizes.body};
   font-style: ${({$italic:e})=>e?`italic`:`normal`};
   color: ${({theme:e,$whiteFont:t})=>t?e.palette.secondary:e.palette.primary};
-`,Va=L.button`
+`;L.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +44,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   &:hover {
     background: rgb(0, 0, 0);
   }
-`;L.button`
+`,L.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +63,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   &:hover {
     background: rgb(0, 0, 0);
   }
-`;var Ha=L.a`
+`;var Va=L.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,6 +83,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   &:hover {
     background: rgb(0, 0, 0);
   }
+`,Ha=L.a`
+  color: #70a9ff;
+
+  &:hover {
+    color: #4678c4;
+  }
 `,Ua=o((e=>{var t=Symbol.for(`react.transitional.element`);function n(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.jsx=n,e.jsxs=n})),z=o(((e,t)=>{t.exports=Ua()}))(),Wa=L.div`
   display: flex;
   flex: 1;
@@ -99,15 +105,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   padding: 0 20px;
   width: auto;
   max-width: 30em;
-`,Ka=L.img`
-  width: 100px;
-  margin-bottom: 10px;
+`,Ka=L(Dn)`
+  color: #70a9ff;
 
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-`,qa=()=>(0,z.jsx)(Wa,{children:(0,z.jsxs)(Ga,{children:[(0,z.jsx)(Ka,{src:`/main-page/apps.png`}),(0,z.jsx)(za,{$whiteFont:!0,children:`zopinos.dev`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Main page.`})]})}),Ja={borderRadius:`5px`,palette:{common:{black:`black`,white:`white`},primary:`rgba(22, 22, 26, 1)`,secondary:`white`,dark:`rgb(12, 12, 12)`,menu:`rgba(0, 0, 0, 0.85)`,light:`#fdfdfd`},typography:{fontSizes:{smaller:`16px`,body:`18px`,heading:`42px`,heading2:`32px`},fonts:{main:`Courier New, monospace`,old:`Times New Roman`},fontWeights:{normal:400,bold:600}}},Ya=L.div`
+  &:hover {
+    color: #4678c4;
+  }
+`,qa=()=>(0,z.jsx)(Wa,{children:(0,z.jsxs)(Ga,{children:[(0,z.jsx)(za,{$whiteFont:!0,children:`zopinos.dev`}),(0,z.jsx)(R,{$whiteFont:!0,children:(0,z.jsx)(Ha,{href:`https://github.com/zopinos`,rel:`noopener`,target:`_blank`,children:`github`})}),(0,z.jsx)(R,{$whiteFont:!0,children:(0,z.jsx)(Ka,{to:`/portfolio`,children:`to portfolio`})})]})}),Ja={borderRadius:`5px`,palette:{common:{black:`black`,white:`white`},primary:`rgba(22, 22, 26, 1)`,secondary:`white`,dark:`rgb(12, 12, 12)`,menu:`rgba(0, 0, 0, 0.85)`,light:`#fdfdfd`},typography:{fontSizes:{smaller:`16px`,body:`18px`,heading:`42px`,heading2:`32px`},fonts:{main:`Courier New, monospace`,old:`Times New Roman`},fontWeights:{normal:400,bold:600}}},Ya=L.div`
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -117,9 +121,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   display: flex;
   align-items: left;
   flex-direction: column;
-  width: 45%;
+  max-width: 600px;
   margin-top: 80px;
-  overflow-y: scroll;
+  margin-right: 50px;
+  margin-left: 50px;
+  overflow-y: hidden;
 `,Za=L.div`
   display: flex;
   align-items: center;
@@ -146,17 +152,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 `,no=L.img`
   max-width: 90%;
   object-fit: contain;
-`,ro=L.a`
-  color: #70a9ff;
-
-  &:hover {
-    color: #4678c4;
-  }
-`,io=()=>(0,z.jsx)(Ya,{children:(0,z.jsxs)(Xa,{children:[(0,z.jsxs)(Za,{children:[(0,z.jsx)(za,{$whiteFont:!0,children:`Portfolio`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Projects from the newest to the oldest.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsxs)(eo,{children:[(0,z.jsx)(Ba,{$whiteFont:!0,children:`Glare Game`}),(0,z.jsxs)(Qa,{children:[(0,z.jsx)(Ha,{href:`https://zopinos.github.io/glare-game/`,rel:`noopener`,target:`_blank`,children:`To Game`}),(0,z.jsx)(Ha,{href:`https://github.com/zopinos/glare-game`,rel:`noopener`,target:`_blank`,children:`Github`})]})]}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/glare-game-demo-2.gif`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`Flutter, Flame Engine, Forge2D`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Game project. Project 2 for the course Device-Agnostic Design with Flutter and Dart.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsxs)(eo,{children:[(0,z.jsx)(Ba,{$whiteFont:!0,children:`demo-dump`}),(0,z.jsxs)(Qa,{children:[(0,z.jsx)(Ha,{href:`https://zopinos.github.io/demo-dump/`,rel:`noopener`,target:`_blank`,children:`To Page`}),(0,z.jsx)(Ha,{href:`https://github.com/zopinos/demo-dump`,rel:`noopener`,target:`_blank`,children:`Github`})]})]}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/demo-dump-demo.png`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`React, TypeScript, styled-components`}),(0,z.jsxs)(R,{$whiteFont:!0,children:[`Personal visual sandbox and archive.`,` `,(0,z.jsx)(ro,{href:`https://zopinos.github.io/demo-dump/#/photo-dump`,rel:`noopener`,target:`_blank`,children:`Here`}),` `,`I also have my photography portfolio currently set up.`]})]}),(0,z.jsxs)($a,{children:[(0,z.jsx)(eo,{children:(0,z.jsx)(Ba,{$whiteFont:!0,children:`Peggle Physics Replicated in Godot`})}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/peggle-clone-demo.gif`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`Godot, gdscript`}),(0,z.jsx)(R,{$whiteFont:!0,children:`I was interested in how the physics work in Peggle, so I replicated the ball shooting mechanic as a base. I wanted to know how the game could be sped up with the physics always staying the same, as well as how when aiming, the ball always hits where the cursor is.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsxs)(eo,{children:[(0,z.jsx)(Ba,{$whiteFont:!0,children:`Futuboard`}),(0,z.jsxs)(Qa,{children:[(0,z.jsx)(Ha,{href:`https://futuboard.live/`,rel:`noopener`,target:`_blank`,children:`To Page`}),(0,z.jsx)(Ha,{href:`https://github.com/Futuboard/Futuboard`,rel:`noopener`,target:`_blank`,children:`Github`})]})]}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/futuboard-demo.png`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`React, TypeScript, Django, Python`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Free and open source workflow management tool on the web which was part of the Software Project course in Aalto University. We worked as a nine-person Scrum team.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsxs)(eo,{children:[(0,z.jsx)(Ba,{$whiteFont:!0,children:`recipe-form`}),(0,z.jsxs)(Qa,{children:[(0,z.jsx)(Ha,{href:`https://zopinos.github.io/recipe-form/`,rel:`noopener`,target:`_blank`,children:`To Page`}),(0,z.jsx)(Ha,{href:`https://github.com/zopinos/recipe-form`,rel:`noopener`,target:`_blank`,children:`Github`})]})]}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`React, Redux, JavaScript, React Native`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Recipe creation app designed to be used as the recipe item is being made. I made this to learn front-end web dev and React Native.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsx)(eo,{children:(0,z.jsx)(Ba,{$whiteFont:!0,children:`Art Gallery Project`})}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/art-gallery-demo.gif`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`Godot, gdscript, Blender`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Small experiment where the user can put their own images on walls of an art gallery.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsx)(eo,{children:(0,z.jsx)(Ba,{$whiteFont:!0,children:`Maze Project`})}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/maze-project-demo.gif`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`Scala, ScalaFX`}),(0,z.jsxs)(R,{$whiteFont:!0,children:[`Project for the Ohjelmointistudio 2 -course. Randomly generated mazes are created and solved with recursive backtracking. The 3D rasterizer is written with the help of`,` `,(0,z.jsx)(ro,{href:`https://youtu.be/ih20l3pJoeU?si=fYl0p9cPybsIO0sf`,rel:`noopener`,target:`_blank`,children:`javidx9's 3D Graphics Engine tutorial series`}),`.`,` `]})]}),(0,z.jsxs)($a,{children:[(0,z.jsx)(eo,{children:(0,z.jsx)(Ba,{$whiteFont:!0,children:`Godot Voxel Experiment`})}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/voxel-demo.gif`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`Godot, gdscript`}),(0,z.jsxs)(R,{$whiteFont:!0,children:[`Small experiment replicating the`,` `,(0,z.jsx)(ro,{href:`https://github.com/s-macke/VoxelSpace`,rel:`noopener`,target:`_blank`,children:`VoxelSpace`}),` `,`demo in Godot.`]})]})]})}),ao=()=>(0,z.jsx)(`svg`,{xmlns:`http://www.w3.org/2000/svg`,height:`30px`,width:`30px`,viewBox:`0 -960 960 960`,fill:`#ffffff`,children:(0,z.jsx)(`path`,{d:`M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z`})}),oo=L.div`
+`,ro=()=>(0,z.jsx)(Ya,{children:(0,z.jsxs)(Xa,{children:[(0,z.jsxs)(Za,{children:[(0,z.jsx)(za,{$whiteFont:!0,children:`Portfolio`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Projects from the newest to the oldest.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsxs)(eo,{children:[(0,z.jsx)(Ba,{$whiteFont:!0,children:`Glare Game`}),(0,z.jsxs)(Qa,{children:[(0,z.jsx)(Va,{href:`https://zopinos.github.io/glare-game/`,rel:`noopener`,target:`_blank`,children:`To Game`}),(0,z.jsx)(Va,{href:`https://github.com/zopinos/glare-game`,rel:`noopener`,target:`_blank`,children:`Github`})]})]}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/glare-game-demo-2.gif`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`Flutter, Flame Engine, Forge2D`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Game project. Project 2 for the course Device-Agnostic Design with Flutter and Dart.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsxs)(eo,{children:[(0,z.jsx)(Ba,{$whiteFont:!0,children:`demo-dump`}),(0,z.jsxs)(Qa,{children:[(0,z.jsx)(Va,{href:`https://zopinos.github.io/demo-dump/`,rel:`noopener`,target:`_blank`,children:`To Page`}),(0,z.jsx)(Va,{href:`https://github.com/zopinos/demo-dump`,rel:`noopener`,target:`_blank`,children:`Github`})]})]}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/demo-dump-demo.png`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`React, TypeScript, styled-components`}),(0,z.jsxs)(R,{$whiteFont:!0,children:[`Personal visual sandbox and archive.`,` `,(0,z.jsx)(Ha,{href:`https://zopinos.github.io/demo-dump/#/photo-dump`,rel:`noopener`,target:`_blank`,children:`Here`}),` `,`I also have my photography portfolio currently set up.`]})]}),(0,z.jsxs)($a,{children:[(0,z.jsx)(eo,{children:(0,z.jsx)(Ba,{$whiteFont:!0,children:`Peggle Physics Replicated in Godot`})}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/peggle-clone-demo.gif`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`Godot, gdscript`}),(0,z.jsx)(R,{$whiteFont:!0,children:`I was interested in how the physics work in Peggle, so I replicated the ball shooting mechanic as a base. I wanted to know how the game could be sped up with the physics always staying the same, as well as how when aiming, the ball always hits where the cursor is.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsxs)(eo,{children:[(0,z.jsx)(Ba,{$whiteFont:!0,children:`Futuboard`}),(0,z.jsxs)(Qa,{children:[(0,z.jsx)(Va,{href:`https://futuboard.live/`,rel:`noopener`,target:`_blank`,children:`To Page`}),(0,z.jsx)(Va,{href:`https://github.com/Futuboard/Futuboard`,rel:`noopener`,target:`_blank`,children:`Github`})]})]}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/futuboard-demo.png`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`React, TypeScript, Django, Python`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Free and open source workflow management tool on the web which was part of the Software Project course in Aalto University. We worked as a nine-person Scrum team.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsxs)(eo,{children:[(0,z.jsx)(Ba,{$whiteFont:!0,children:`recipe-form`}),(0,z.jsxs)(Qa,{children:[(0,z.jsx)(Va,{href:`https://zopinos.github.io/recipe-form/`,rel:`noopener`,target:`_blank`,children:`To Page`}),(0,z.jsx)(Va,{href:`https://github.com/zopinos/recipe-form`,rel:`noopener`,target:`_blank`,children:`Github`})]})]}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`React, Redux, JavaScript, React Native`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Recipe creation app designed to be used as the recipe item is being made. I made this to learn front-end web dev and React Native.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsx)(eo,{children:(0,z.jsx)(Ba,{$whiteFont:!0,children:`Art Gallery Project`})}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/art-gallery-demo.gif`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`Godot, gdscript, Blender`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Small experiment where the user can put their own images on walls of an art gallery.`})]}),(0,z.jsxs)($a,{children:[(0,z.jsx)(eo,{children:(0,z.jsx)(Ba,{$whiteFont:!0,children:`Maze Project`})}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/maze-project-demo.gif`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`Scala, ScalaFX`}),(0,z.jsxs)(R,{$whiteFont:!0,children:[`Project for the Ohjelmointistudio 2 -course. Randomly generated mazes are created and solved with recursive backtracking. The 3D rasterizer is written with the help of`,` `,(0,z.jsx)(Ha,{href:`https://youtu.be/ih20l3pJoeU?si=fYl0p9cPybsIO0sf`,rel:`noopener`,target:`_blank`,children:`javidx9's 3D Graphics Engine tutorial series`}),`.`,` `]})]}),(0,z.jsxs)($a,{children:[(0,z.jsx)(eo,{children:(0,z.jsx)(Ba,{$whiteFont:!0,children:`Godot Voxel Experiment`})}),(0,z.jsx)(to,{children:(0,z.jsx)(no,{src:`/main-page/media/voxel-demo.gif`})}),(0,z.jsx)(R,{$whiteFont:!0,$italic:!0,children:`Godot, gdscript`}),(0,z.jsxs)(R,{$whiteFont:!0,children:[`Small experiment replicating the`,` `,(0,z.jsx)(Ha,{href:`https://github.com/s-macke/VoxelSpace`,rel:`noopener`,target:`_blank`,children:`VoxelSpace`}),` `,`demo in Godot.`]})]})]})}),io=L.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`,so=L.div`
+`,ao=L.div`
   display: flex;
   align-items: center;
   justify-content: left;
@@ -167,81 +167,32 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   border-style: solid;
   border-color: ${({theme:e})=>e.palette.light};
   border-width: 1px;
-`,co=L.div`
+`,oo=L.div`
   cursor: pointer;
-`,lo=L.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+`,so=L.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  //background: rgba(0, 0, 0, 0.5);
-`,uo=`80%`,fo=L.div`
-  position: fixed;
-  top: 80px;
-  left: 5px;
-  display: flex;
-  background: ${({theme:e})=>e.palette.menu};
-  border-radius: ${({theme:e})=>e.borderRadius};
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  width: 60%;
-  overflow-y: ${({$height:e})=>e==`0px`?`scroll`:`none`};
-  padding: 0px;
-  height: ${({$height:e})=>e};
-  transition: height 200ms ease-out;
-`,po=L.div`
-  flex: ${({$flex:e})=>e||`1`};
-  display: flex;
-  margin: 14px;
-  border-style: solid;
-  border-color: ${({theme:e})=>e.palette.secondary};
-  border-width: 1px;
-`,mo=L.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-`,ho=L.div`
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-`,go=L(Dn)`
-  display: block;
-  padding: 10px;
+  gap: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+  overflow-x: auto;
+`,co=L(Dn)`
+  padding: 14px;
   color: ${({theme:e})=>e.palette.secondary};
+  background-color: rgba(0, 0, 0, 0.2);
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+    background-color: rgba(0, 0, 0, 1);
   }
   font-family: ${({theme:e})=>e.typography.fonts.main};
-`,_o=L.div`
-  display: flex;
-  flex-direction: column;
-  padding: 60px;
-  color: ${({theme:e})=>e.palette.secondary};
-  font-family: ${({theme:e})=>e.typography.fonts.main};
-`,vo=L.img`
-  border-radius: 100%;
+`,lo=L.img`
   width: 70px;
-  height: 70px;
-`,yo=L.div`
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  gap: 14px;
-  color: ${({theme:e})=>e.palette.secondary};
-  font-family: ${({theme:e})=>e.typography.fonts.main};
-`,bo=L.a`
-  color: #70a9ff;
 
-  &:hover {
-    color: #4678c4;
-  }
-`,xo=()=>{let e=(0,_.useRef)(null),t=(0,_.useRef)(null),n=_t(),[r,i]=(0,_.useState)(!1),[a,o]=(0,_.useState)(`0px`),s=()=>{o(`0px`),setTimeout(()=>i(!1),300)},c=n=>{e.current&&t.current&&!n.composedPath().includes(e.current)&&!n.composedPath().includes(t.current)&&s()},l=e=>{(e.key===`Escape`||e.code===`Escape`)&&s()};return(0,_.useEffect)(()=>{if(r)return setTimeout(()=>o(uo),10),document.body.addEventListener(`click`,c),document.body.addEventListener(`keydown`,l),()=>{document.body.removeEventListener(`click`,c),document.body.removeEventListener(`keydown`,l)};o(`0px`)},[r]),(0,z.jsxs)(oo,{children:[(0,z.jsxs)(so,{children:[(0,z.jsx)(Va,{ref:t,onClick:()=>i(!r),children:(0,z.jsx)(ao,{})}),(0,z.jsx)(co,{onClick:()=>{n(`/`)},children:(0,z.jsx)(R,{$whiteFont:!0,$bolded:!0,children:`zopinos.dev`})})]}),r&&(0,z.jsx)(lo,{children:(0,z.jsxs)(fo,{ref:e,$height:a,children:[(0,z.jsxs)(mo,{children:[(0,z.jsx)(po,{$flex:`1`,children:(0,z.jsxs)(yo,{children:[(0,z.jsx)(vo,{src:`https://avatars.githubusercontent.com/u/89577985?v=4`,draggable:!1}),(0,z.jsxs)(`div`,{style:{flexDirection:`column`,gap:`0px`},children:[(0,z.jsx)(`div`,{style:{padding:`5px`,fontSize:`20px`},children:(0,z.jsx)(`b`,{children:`zopinos`})}),(0,z.jsx)(`div`,{style:{padding:`5px`},children:(0,z.jsx)(bo,{href:`https://github.com/zopinos`,target:`_blank`,children:`github`})})]})]})}),(0,z.jsx)(po,{$flex:`5`,children:(0,z.jsxs)(ho,{children:[(0,z.jsx)(go,{to:`/`,children:`[0] Home`}),(0,z.jsx)(go,{to:`/portfolio`,children:`[1] Portfolio`})]})})]}),(0,z.jsx)(po,{$flex:`2`,children:(0,z.jsxs)(_o,{children:[(0,z.jsx)(za,{$whiteFont:!0,children:`zopinos.dev`}),(0,z.jsx)(R,{$whiteFont:!0,children:`Welcome to zopinos.dev!`})]})})]})})]})},So=Ra`
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+`,uo=()=>{let e=_t(),t=()=>{e(`/`)};return(0,z.jsx)(io,{children:(0,z.jsxs)(ao,{children:[(0,z.jsx)(oo,{onClick:t,children:(0,z.jsx)(lo,{src:`/main-page/apps.png`})}),(0,z.jsx)(oo,{onClick:t,children:(0,z.jsx)(R,{$whiteFont:!0,$bolded:!0,children:`zopinos.dev`})}),(0,z.jsxs)(so,{children:[(0,z.jsx)(co,{to:`/`,children:`[0] Home`}),(0,z.jsx)(co,{to:`/portfolio`,children:`[1] Portfolio`})]})]})})},fo=Ra`
   body {
     padding: 0;
     margin: 0;
@@ -255,4 +206,4 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     flex-direction: column;
     height: 100%;
   }
-`;(0,Vr.createRoot)(document.getElementById(`root`)).render((0,z.jsx)(_.StrictMode,{children:(0,z.jsx)(()=>(0,z.jsx)(En,{children:(0,z.jsxs)(Oa,{theme:Ja,children:[(0,z.jsx)(So,{}),(0,z.jsx)(xo,{}),(0,z.jsxs)(Ht,{children:[(0,z.jsx)(Bt,{path:`/`,element:(0,z.jsx)(qa,{})}),(0,z.jsx)(Bt,{path:`/portfolio/`,element:(0,z.jsx)(io,{})})]})]})}),{})}));
+`;(0,Vr.createRoot)(document.getElementById(`root`)).render((0,z.jsx)(_.StrictMode,{children:(0,z.jsx)(()=>(0,z.jsx)(En,{children:(0,z.jsxs)(Oa,{theme:Ja,children:[(0,z.jsx)(fo,{}),(0,z.jsx)(uo,{}),(0,z.jsxs)(Ht,{children:[(0,z.jsx)(Bt,{path:`/`,element:(0,z.jsx)(qa,{})}),(0,z.jsx)(Bt,{path:`/portfolio/`,element:(0,z.jsx)(ro,{})})]})]})}),{})}));

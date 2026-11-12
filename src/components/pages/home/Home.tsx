@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { H1, P } from "../../StyledElements";
+import { H1, HyperLink, P } from "../../StyledElements";
+import { Link } from "react-router-dom";
 
 const Base = styled.div`
   display: flex;
@@ -21,23 +22,27 @@ const Page = styled.div`
   max-width: 30em;
 `;
 
-const Logo = styled.img`
-  width: 100px;
-  margin-bottom: 10px;
+const RouteLink = styled(Link)`
+  color: #70a9ff;
 
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
+  &:hover {
+    color: #4678c4;
+  }
 `;
 
 const Home = () => {
   return (
     <Base>
       <Page>
-        <Logo src="/main-page/apps.png" />
         <H1 $whiteFont>zopinos.dev</H1>
-        <P $whiteFont>Main page.</P>
+        <P $whiteFont>
+          <HyperLink href="https://github.com/zopinos" rel="noopener" target="_blank">
+            github
+          </HyperLink>
+        </P>
+        <P $whiteFont>
+          <RouteLink to="/portfolio">to portfolio</RouteLink>
+        </P>
       </Page>
     </Base>
   );

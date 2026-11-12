@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BoxButtonLink, H1, H2, P } from "../../StyledElements";
+import { BoxButtonLink, H1, H2, HyperLink, P } from "../../StyledElements";
 
 const Base = styled.div`
   display: flex;
@@ -13,9 +13,11 @@ const Content = styled.div`
   display: flex;
   align-items: left;
   flex-direction: column;
-  width: 45%;
+  max-width: 600px;
   margin-top: 80px;
-  overflow-y: scroll;
+  margin-right: 50px;
+  margin-left: 50px;
+  overflow-y: hidden;
 `;
 
 const Heading = styled.div`
@@ -54,14 +56,6 @@ const ProjectImageBox = styled.div`
 const ProjectImage = styled.img`
   max-width: 90%;
   object-fit: contain;
-`;
-
-const HyperLink = styled.a`
-  color: #70a9ff;
-
-  &:hover {
-    color: #4678c4;
-  }
 `;
 
 const Portfolio = () => {

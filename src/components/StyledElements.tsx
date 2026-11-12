@@ -87,3 +87,11 @@ export const BoxButtonLink = styled.a<{ $bolded?: boolean }>`
     background: rgb(0, 0, 0);
   }
 `;
+
+export const HyperLink = styled.a`
+  color: #70a9ff;
+
+  &:hover {
+    color: #4678c4;
+  }
+`;
