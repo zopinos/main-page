@@ -22,6 +22,7 @@ const TopBarBase = styled.div`
 `;
 
 const Header = styled.div`
+  display: flex;
   cursor: pointer;
 `;
 
@@ -35,6 +36,7 @@ const LinkList = styled.div`
 
 const PageButton = styled(Link)`
   padding: 14px;
+  border-radius: 2px;
   color: ${({ theme }) => theme.palette.secondary};
   background-color: rgba(0, 0, 0, 0.2);
   text-decoration: none;
@@ -65,12 +67,7 @@ const TopBar = () => {
     <Base>
       <TopBarBase>
         <Header onClick={goToMainPage}>
-          <Logo src="/main-page/apps.png" />
-        </Header>
-        <Header onClick={goToMainPage}>
-          <P $whiteFont $bolded>
-            zopinos.dev
-          </P>
+          <Logo src="/main-page/logo-1.svg" />
         </Header>
         <LinkList>
           <PageButton to="/">[0] Home</PageButton>

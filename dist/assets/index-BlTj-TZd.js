@@ -82,6 +82,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
   &:hover {
     background: rgb(0, 0, 0);
+    text-decoration: underline;
   }
 `,Ha=L.a`
   color: #70a9ff;
@@ -168,6 +169,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   border-color: ${({theme:e})=>e.palette.light};
   border-width: 1px;
 `,oo=L.div`
+  display: flex;
   cursor: pointer;
 `,so=L.div`
   display: flex;
@@ -177,6 +179,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   overflow-x: auto;
 `,co=L(Dn)`
   padding: 14px;
+  border-radius: 2px;
   color: ${({theme:e})=>e.palette.secondary};
   background-color: rgba(0, 0, 0, 0.2);
   text-decoration: none;
@@ -192,7 +195,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
-`,uo=()=>{let e=_t(),t=()=>{e(`/`)};return(0,z.jsx)(io,{children:(0,z.jsxs)(ao,{children:[(0,z.jsx)(oo,{onClick:t,children:(0,z.jsx)(lo,{src:`/main-page/apps.png`})}),(0,z.jsx)(oo,{onClick:t,children:(0,z.jsx)(R,{$whiteFont:!0,$bolded:!0,children:`zopinos.dev`})}),(0,z.jsxs)(so,{children:[(0,z.jsx)(co,{to:`/`,children:`[0] Home`}),(0,z.jsx)(co,{to:`/portfolio`,children:`[1] Portfolio`})]})]})})},fo=Ra`
+`,uo=()=>{let e=_t();return(0,z.jsx)(io,{children:(0,z.jsxs)(ao,{children:[(0,z.jsx)(oo,{onClick:()=>{e(`/`)},children:(0,z.jsx)(lo,{src:`/main-page/logo-1.svg`})}),(0,z.jsxs)(so,{children:[(0,z.jsx)(co,{to:`/`,children:`[0] Home`}),(0,z.jsx)(co,{to:`/portfolio`,children:`[1] Portfolio`})]})]})})},fo=Ra`
   body {
     padding: 0;
     margin: 0;

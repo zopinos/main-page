@@ -85,6 +85,7 @@ export const BoxButtonLink = styled.a<{ $bolded?: boolean }>`
 
   &:hover {
     background: rgb(0, 0, 0);
+    text-decoration: underline;
   }
 `;
 
